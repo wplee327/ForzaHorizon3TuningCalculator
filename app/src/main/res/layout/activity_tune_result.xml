@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tune_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="wplee.forzahorizon3tuningcalculator.TuneResult"
+    android:layout_gravity="center"
+    android:background="@color/colorBackground">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridLayout"
+        android:layout_gravity="top|center_horizontal">
+
+        <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backButton"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <TextView
+            android:text="@string/tire_psi_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/psiTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="0"
+            android:layout_row="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/psiValueTextView"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:layout_columnSpan="2"
+            android:layout_margin="10dp"
+            android:text="@string/tire_psi_value" />
+
+        <TextView
+            android:text="@string/camber_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/camberTextView"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_columnSpan="3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="@string/front_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/camberFrontTextView"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_columnSpan="1"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/camberFrontValueTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="3" />
+
+        <TextView
+            android:text="@string/rear_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/camberRearTextView"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/camberRearValueTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:layout_columnSpan="2" />
+
+        <TextView
+            android:text="@string/caster_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/casterTextView"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_columnSpan="3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/casterValueTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_columnSpan="3"
+            android:layout_column="0"
+            android:layout_row="6" />
+
+        <TextView
+            android:text="@string/rollbars_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rollbarsTextView"
+            android:layout_row="7"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_columnSpan="3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="@string/front_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rollbarsFrontTextView"
+            android:layout_column="0"
+            android:layout_row="8"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rollbarsFrontValueTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="8" />
+
+        <TextView
+            android:text="@string/rear_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rollbarsRearTextView"
+            android:layout_margin="10dp"
+            android:layout_row="9"
+            android:layout_column="0"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rollbarsRearValueTextView"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="9"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:text="@string/springs_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/springsTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_columnSpan="3"
+            android:layout_column="0"
+            android:layout_row="10"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="@string/front_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/springsFrontTextView"
+            android:layout_margin="10dp"
+            android:layout_row="11"
+            android:layout_column="0"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/springsFrontValueTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_columnSpan="2"
+            android:layout_column="1"
+            android:layout_row="11" />
+
+        <TextView
+            android:text="@string/rear_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/springsRearTextView"
+            android:layout_row="12"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/springsRearValueTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_columnSpan="2"
+            android:layout_column="1"
+            android:layout_row="12" />
+
+        <TextView
+            android:text="@string/rebound_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reboundTextView"
+            android:layout_margin="10dp"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_row="13"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="@string/front_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reboundFrontTextView"
+            android:layout_gravity="center"
+            android:layout_row="14"
+            android:layout_column="0"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reboundFrontValueTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="14" />
+
+        <TextView
+            android:text="@string/rear_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reboundRearTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="0"
+            android:layout_row="15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reboundRearValueTextView"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="15" />
+
+        <TextView
+            android:text="@string/bump_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bumpTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_row="16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="@string/front_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bumpFrontTextView"
+            android:layout_gravity="center"
+            android:layout_row="17"
+            android:layout_column="0"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bumpFrontValueTextView"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="17" />
+
+        <TextView
+            android:text="@string/rear_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bumpRearTextView"
+            android:layout_margin="10dp"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bumpRearValueTextView"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="18" />
+
+        <TextView
+            android:text="@string/brakes_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/brakesTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_row="19"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="@string/balance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/balanceTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="0"
+            android:layout_row="20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/balanceValueTextView"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="20"
+            android:text="@string/balance_value" />
+
+        <TextView
+            android:text="@string/pressure_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pressureTextView"
+            android:layout_margin="10dp"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="21" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pressureValueTextView"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="21"
+            android:text="@string/pressure_value" />
+
+        <TextView
+            android:text="@string/diff_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diffTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="0"
+            android:layout_row="22"
+            android:layout_columnSpan="3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="@string/accel_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diffAccelTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="0"
+            android:layout_row="23"
+            android:layout_rowSpan="2" />
+
+        <TextView
+            android:text="@string/front_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diffAccelFrontTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="1"
+            android:layout_row="23" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diffAccelFrontValueTextView"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_column="2"
+            android:layout_row="23" />
+
+        <TextView
+            android:text="@string/rear_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diffAccelRearTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="1"
+            android:layout_row="24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diffAccelRearValueTextView"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_column="2"
+            android:layout_row="24" />
+
+        <TextView
+            android:text="@string/decel_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diffDecelTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="0"
+            android:layout_row="25"
+            android:layout_rowSpan="2" />
+
+        <TextView
+            android:text="@string/front_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diffDecelFrontTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="1"
+            android:layout_row="25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diffDecelFrontValueTextView"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_column="2"
+            android:layout_row="25" />
+
+        <TextView
+            android:text="@string/rear_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diffDecelRearTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="1"
+            android:layout_row="26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diffDecelRearValueTextView"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_column="2"
+            android:layout_row="26" />
+
+        <TextView
+            android:text="@string/split_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/splitTextView"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_column="0"
+            android:layout_row="27" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/splitValueTextView"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="27" />
+
+    </GridLayout>
+
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unit_array">
+        <item>Imperial</item>
+        <item>Metric</item>
+    </string-array>
+    <string-array name="class_array">
+        <item>S+</item>
+        <item>A-B</item>
+        <item>C-E</item>
+    </string-array>
+    <string-array name="drivetrain_array">
+        <item>AWD</item>
+        <item>RWD</item>
+        <item>FWD</item>
+    </string-array>
+</resources>
